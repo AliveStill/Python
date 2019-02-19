@@ -1,8 +1,12 @@
 import requests
 import os
 
+#   @url can be diffenent depends on your appreciations
+#   @root is your own PC path, which is usually different from mine
+
 url = "https://www.lifeofpix.com/wp-content/uploads/2018/12/LifeOfPix_IbrahimRifath_S1-3-of-31-1600x1067.jpg"
 root = r"D:\requests_instance\images\\"
+
 path = root + url.split('/')[-1]
 try:
     if not os.path.exists(root):
